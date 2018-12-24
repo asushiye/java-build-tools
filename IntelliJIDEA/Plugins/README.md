@@ -14,7 +14,26 @@
 ![installPlugins](installPlugins.png)
 
 
-若插件查找不到，可以重新修改插件仓库地址
+显示 IntelliJ IDEA 的插件分类，
+
+* All plugins：显示 IntelliJ IDEA 支持的所有插件；
+* Enabled：显示当前以前启用的插件；
+* Disabled：显示当前未启用的插件；
+* Bundled：显示 IntelliJ IDEA 所有自带的插件；
+* Custom：显示我们自己安装的插件。
+
+打钩√表示为已经启用的插件，反之禁止
+
+
+另外安装插件支持
+
+* 安装 JetBrains 开发的插件；
+
+* 安装插件仓库提供的插件；
+
+* 安装本地已经下载完的插件。
+
+若使用插件仓库安装，若查找不到，可以重新修改插件仓库地址
 
 ![sourcePlugins](sourcePlugins.png)
 
