@@ -4,6 +4,10 @@
 			安装插件
 			卸载插件
 		常用插件
+			.ignore 使用
+			Alibaba Java Coding Guidelines
+			VisualVM Launcher
+
 
 
 ## 插件管理
@@ -73,4 +77,48 @@ file -> .ignore file
 ### VisualVM Launcher
 
 ![VisualJVM](VisualJVM.png)
+
+####  安装visualVM客户端及配置环境
+
+在使用插件之前，需要安装visualVM客户端及本地运行配置环境
+
+官网下载: https://visualvm.github.io/index.html
+
+安装在：E:\6_Java\1_JDK\visualvm_142
+
+visualvm本身也是java程序，若启动/bin/visualvm.exe 
+
+报错(Cannot find Java 1.8 or higher.)需要手工配置JDK路径
+
+```
+打开配置文件 /etc/visualvm.conf
+
+修改：visualvm_jdkhome为JDK绝对路径 
+
+visualvm_jdkhome="E:\6_Java\1_JDK\jdk1.8.0_91"
+```
+
+#### 配置idea
+
+打开settings->Other Settings-> VisualVM Launcher
+
+![visualvmplugin](visualvmplugin.png)
+
+选择VisualVM 程序
+
+#### 如何使用呢？
+
+可直接运行，或通过idea  按钮运行 ![visualvmpluginyun](visualvmpluginyun.png)
+
+![VisualVM](VisualVM.png)
+
+左侧显示本地和运程的JAVA程序，由于VisualVM 本身也Java程序，因此也可以监控自己。
+
+右侧显示
+
+1. java程序进程情况比如JDK启动参数
+2. 监控CPU，内存情况
+3. 监控线程情况
+4. 实时获取CPU，内存，线程样本数据
+
 
